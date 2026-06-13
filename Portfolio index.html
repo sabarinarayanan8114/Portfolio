@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabari Narayanan D | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background: linear-gradient(to right,#00dbde,#fc00ff);
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:#222;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nav-link{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+}
+
+.nav-link li{
+    padding:20px;
+}
+
+.nav-link a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-link a:hover{
+    color:#00dbde;
+}
+
+/* HOME */
+
+#group{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:60px 20px;
+    flex-wrap:wrap;
+}
+
+#my-img{
+    width:350px;
+    border-radius:25px;
+    border:5px solid white;
+    box-shadow:0 0 20px white;
+}
+
+#hpara{
+    max-width:600px;
+}
+
+#hpara h2{
+    font-size:50px;
+}
+
+#myname{
+    color:aqua;
+    font-size:80px;
+    line-height:1;
+}
+
+#hpara p{
+    font-size:35px;
+    font-weight:600;
+    margin-top:20px;
+}
+
+.social-icons{
+    margin-top:25px;
+    display:flex;
+    gap:20px;
+}
+
+.social-icons a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    padding:10px 18px;
+    border:2px solid white;
+    border-radius:10px;
+}
+
+.social-icons a:hover{
+    background:white;
+    color:black;
+}
+
+/* HEADINGS */
+
+.section-title{
+    text-align:center;
+    font-size:55px;
+    margin-top:60px;
+    text-decoration:underline orangered 5px;
+}
+
+/* SKILLS */
+
+.skill-list{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.skill-card{
+    background:white;
+    color:black;
+    text-align:center;
+    padding:25px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px white;
+}
+
+.skill-card img{
+    width:120px;
+    height:120px;
+}
+
+.skill-card h3{
+    margin-top:10px;
+}
+
+/* ABOUT */
+
+.p-about{
+    width:80%;
+    margin:40px auto;
+    text-align:justify;
+    font-size:22px;
+    line-height:1.8;
+}
+
+/* PROJECTS */
+
+.project-list{
+    width:85%;
+    margin:40px auto;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(5px);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.proj-head{
+    color:gold;
+    font-size:28px;
+}
+
+.p-data{
+    margin-top:15px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* QUALIFICATION */
+
+.q-list{
+    width:85%;
+    margin:40px auto;
+}
+
+.q-card{
+    background:rgba(255,255,255,0.12);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:25px;
+}
+
+.q-head{
+    color:gold;
+    font-size:28px;
+}
+
+.q-data{
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* CONTACT */
+
+.contact-list{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.contact-box{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+    min-width:280px;
+    text-align:center;
+}
+
+.contact-box a{
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#222;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+#myname{
+    font-size:50px;
+}
+
+#hpara h2{
+    font-size:35px;
+}
+
+#hpara p{
+    font-size:25px;
+}
+
+.section-title{
+    font-size:40px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+<ul class="nav-link">
+<li><a href="#home">HOME</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#projects">PROJECTS</a></li>
+<li><a href="#qualification">QUALIFICATION</a></li>
+<li><a href="#contact">CONTACT</a></li>
+</ul>
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
+<div id="group">
+
+<img src="sabari.jpg" alt="Sabari Narayanan D" id="my-img">
+
+<div id="hpara">
+
+<h2>Hi, I'm</h2>
+
+<h1 id="myname">
+Sabari<br>
+Narayanan.D
+</h1>
+
+<p>Computer Science Engineer</p>
+
+<div class="social-icons">
+
+<a href="https://linkedin.com/in/sabari-narayanan-d-8114sj" target="_blank">
+LinkedIn
+</a>
+
+<a href="https://github.com/sabarinarayanan8114" target="_blank">
+GitHub
+</a>
+
+<a href="mailto:dsabari2408@gmail.com">
+Email
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h1 class="section-title">SKILLS</h1>
+
+<div class="skill-list">
+
+<div class="skill-card">
+<img src="https://cdn-icons-png.flaticon.com/512/226/226777.png">
+<h3>Java</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png">
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png">
+<h3>SQL</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919825.png">
+<h3>Node.js</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h1 class="section-title">ABOUT ME</h1>
+
+<p class="p-about">
+I am a passionate and detail-oriented Computer Science Engineer with a
+strong foundation in software development and problem-solving. I enjoy
+building efficient and scalable applications that solve real-world
+problems. I am always eager to learn new technologies and contribute
+to innovative projects.
+</p>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h1 class="section-title">PROJECTS</h1>
+
+<div class="project-list">
+
+<div class="project-card">
+
+<h2 class="proj-head">
+Expense Tracker : Java, JavaFX, Spring Boot, MySQL
+</h2>
+
+<p class="p-data">
+• Built a full-stack expense tracking app with JavaFX UI and Spring Boot REST APIs for managing, tracking, and analysing expenses.<br><br>
+
+• Implemented MySQL for persistent data storage with OOP-based modular architecture for scalability and maintainability.<br><br>
+
+• Enabled category-wise expense breakdowns and summary views for efficient financial tracking.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h2 class="proj-head">
+Med Health : React.js, Node.js, Express.js, MongoDB
+</h2>
+
+<p class="p-data">
+• Developed Med Health, a hospital management website with a strong focus on front-end features to provide an intuitive and user-friendly interface for managing hospital operations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- QUALIFICATION -->
+
+<section id="qualification">
+
+<h1 class="section-title">QUALIFICATION</h1>
+
+<div class="q-list">
+
+<div class="q-card">
+
+<h2 class="q-head">
+V.S.B College of Engineering Technical Campus
+</h2>
+
+<p class="q-data">
+Coimbatore, India<br>
+B.E. in Computer Science and Engineering — CGPA: 8.13/10
+</p>
+
+</div>
+
+<div class="q-card">
+
+<h2 class="q-head">
+Sri Lathangi Vidhya Mandir Higher Secondary School
+</h2>
+
+<p class="q-data">
+Pollachi, India<br>
+H.S.C (Higher Secondary) — 80%
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h1 class="section-title">CATCH ME ON</h1>
+
+<div class="contact-list">
+
+<div class="contact-box">
+<a href="https://linkedin.com/in/sabari-narayanan-d-8114sj" target="_blank">
+LinkedIn
+</a>
+</div>
+
+<div class="contact-box">
+<a href="https://github.com/sabarinarayanan8114" target="_blank">
+GitHub
+</a>
+</div>
+
+<div class="contact-box">
+<a href="mailto:dsabari2408@gmail.com">
+dsabari2408@gmail.com
+</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2025 Sabari Narayanan D | Portfolio
+</footer>
+
+</body>
+</html>
